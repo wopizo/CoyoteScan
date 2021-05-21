@@ -53,9 +53,6 @@
             @endforeach
         @endisset
         </tbody>
-        @isset($searchValue)
-            {{ $searchValue }}
-        @endisset
     </table>
 
 @endsection

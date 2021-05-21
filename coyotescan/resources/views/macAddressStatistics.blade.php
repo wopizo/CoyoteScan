@@ -5,10 +5,6 @@
 @section("content")
     <form action="{{ route('macAddressStatisticsPage', $id) }}" method="get">
         <div class="form-group">
-            <label for="search">Поиск</label>
-            <input type="text" class="form-control" id="search" name="search">
-        </div>
-        <div class="form-group">
             <label for="timeStart">Время от</label>
             <input type="datetime-local" class="form-control" id="timeStart" name="timeStart">
         </div>
