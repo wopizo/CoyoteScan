@@ -16,7 +16,7 @@ class Station extends Model
 
     public static function stationStatistics($id, $timeStart, $timeFinish, $delta, $marked, $search){
         $resultList = array();
-        $query = 'SELECT DISTINCT mac.address as res
+        $query = 'SELECT DISTINCT mac.address as res, mac.id as id
                     FROM records rec
                         JOIN stations st ON st.id = rec.station_id
                         JOIN entry_records entry ON rec.id = entry.record_id
@@ -41,7 +41,7 @@ class Station extends Model
 
             $searchFilter = false;
             foreach($mac_addresses as $mac){
-                $addresses[] = $mac->res;
+                $addresses[] = ['address'=>$mac->res, 'id'=>$mac->id];
                 if(!empty($search) && strpos($mac->res, $search) !== false) {
                     $searchFilter = true;
                 }

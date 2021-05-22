@@ -44,7 +44,7 @@ class Record extends Model
 
                 $timeStartNew+=$delta;
             }
-            $resultList[] = ['address' => $station->address, 'count' => $count];
+            $resultList[] = ['address' => $station->address, 'count' => $count, 'id'=> $station->id];
         }
         return $resultList;
     }

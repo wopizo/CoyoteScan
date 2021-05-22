@@ -36,7 +36,7 @@ class MacAddress extends Model
                         WHERE rec.time > ? AND rec.station_id <> ? AND mac_address_id = ?';
         $query_record .= (!empty($marked) && $marked == true)?' AND mac.isMarked = 1 GROUP BY rec.time, rec.station_id, st.address':' GROUP BY rec.time, rec.station_id, st.address';
 
-        $query_mac_addresses = 'SELECT DISTINCT mac.address as mac_address
+        $query_mac_addresses = 'SELECT DISTINCT mac.address as mac_address, mac.id as id
                                 FROM records rec
                                     JOIN entry_records entry ON rec.id = entry.record_id
                                     JOIN mac_addresses mac ON mac.id = entry.mac_address_id
@@ -67,11 +67,12 @@ class MacAddress extends Model
             $mac_addresses = DB::select($query_mac_addresses, [ $timeStartNew, $timeFinishNew, $stationId]);
             $addresses = [];
             foreach($mac_addresses as $mac){
-                $addresses[] = $mac->mac_address;
+                $addresses[] = ['address'=>$mac->mac_address, 'id'=>$mac->id];
             }
             if(!empty($addresses)){
                 $resultList[] = [
                     'address' => $stationAddress,
+                    'stationId' => $stationId,
                     'time' => $timeStartNew." - ".$timeFinishNew,
                     'mac_addresses' => $addresses
                 ];

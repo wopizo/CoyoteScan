@@ -1,0 +1,31 @@
+	/*
+  	flaticon icon font: flaticon
+  	*/
+
+@font-face {
+  font-family: "flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff2") format("woff2"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/flaticon.svg#flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.svg#flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: flapasswordticon;
+  font-style: normal;
+}
+
+.flaticon-quote:before { content: "\f100"; }
+.flaticon-shopping-cart-black-shape:before { content: "\f101"; }

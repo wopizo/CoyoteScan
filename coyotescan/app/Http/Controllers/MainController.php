@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Station;
 use App\Models\MacAddress;
 use App\Models\Record;
+use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
@@ -26,5 +27,24 @@ class MainController extends Controller
             }
         }
         return $data;
+    }
+
+    public function main(Request $request){
+        $macId = empty($request->input('macId'))?1:$request->input('macId');
+        $stationId = empty($request->input('stationId'))?1:$request->input('stationId');
+
+        return view('index', ['macId' => $macId, 'stationId' => $stationId]);
+    }
+
+    public function toStation(Request $request){
+        $stationId = empty($request->input('stationId'))?1:$request->input('stationId');
+
+        return redirect()->route('stationStatisticsPage', [Station::where('address', $stationId)->value('id')]);
+    }
+
+    public function toMac(Request $request){
+        $macId = empty($request->input('macId'))?1:$request->input('macId');
+
+        return redirect()->route('macAddressStatisticsPage', [MacAddress::where('address', $macId)->value('id')]);
     }
 }
