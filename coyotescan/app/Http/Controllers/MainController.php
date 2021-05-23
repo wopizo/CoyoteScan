@@ -39,11 +39,19 @@ class MainController extends Controller
     public function toStation(Request $request){
         $stationId = empty($request->input('stationId'))?1:$request->input('stationId');
 
+        if(empty(Station::where('address', $stationId)->value('id'))){
+            return redirect()->route('main', ['error' => 'Данный адрес не обнаружен в базе.']);
+        }
+
         return redirect()->route('stationStatisticsPage', [Station::where('address', $stationId)->value('id')]);
     }
 
     public function toMac(Request $request){
         $macId = empty($request->input('macId'))?1:$request->input('macId');
+
+        if(empty(MacAddress::where('address', $macId)->value('id'))){
+            return redirect()->route('main', ['error' => 'Данный МАС-адрес не обнаружен в базе.']);
+        }
 
         return redirect()->route('macAddressStatisticsPage', [MacAddress::where('address', $macId)->value('id')]);
     }

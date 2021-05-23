@@ -19,6 +19,12 @@
     <section class="padding_top padding_bottom">
         <div class="container">
 
+            @isset($error)
+                <div class="alert alert-primary" role="alert">
+                    {{$error}}
+                </div>
+            @endisset
+
             <div class="row my-5">
                 <div class="col-md-1 my-auto">
                     <img src="../img/database_ico.png">
