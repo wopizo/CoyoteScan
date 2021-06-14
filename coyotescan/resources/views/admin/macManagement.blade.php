@@ -1,6 +1,6 @@
 @extends('.parts.app')
 
-@section("title")Управление пользователями@endsection
+@section("title")Управление мак-адресами@endsection
 
 @section('content')
 
@@ -12,10 +12,10 @@
                         <table class="table table-borderless">
                             <thead>
                             <tr class="table_header_1">
-                                <form method="GET" action="{{ route('userAdminPageSearch') }}">
+                                <form method="GET" action="{{ route('macAdminPageSearch') }}">
                                     <th scope="col">
                                         <div class="row">
-                                            <div class="col-md-6 text-md-left">ФИО</div>
+                                            <div class="col-md-6 text-md-left">MAC-адрес</div>
                                             <div class="col-md-6 text-md-right">
                                                 <input type="text" class="form-control" placeholder="Поиск"
                                                        name="search">
@@ -30,17 +30,17 @@
                             </thead>
                             <tbody>
                             @isset($data)
-                                @foreach($data as $user)
+                                @foreach($data as $mac)
                                     <tr class="table_row_1">
                                         <td class="table_text_1">
-                                            {{ $user['fio'] }}
+                                            {{ $mac['address'] }}
                                         </td>
                                         <td class="table_text_1">
                                             <form method="POST"
-                                                  action="{{ route('userAdminChange', $user['id']) }}"
+                                                  action="{{ route('macAdminChange', $mac['id']) }}"
                                                   class="row contact_form">
                                                 @csrf
-                                                @if ($user['isMarked'] == 0)
+                                                @if ($mac['isMarked'] == 0)
                                                     <button type="submit" class="btn btn-success">Отметить</button>
                                                 @else
                                                     <button type="submit" class="btn btn-danger">Снять метку</button>

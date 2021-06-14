@@ -3,7 +3,6 @@
 @section("title")Главная страница@endsection
 
 @section('content')
-
     <section class="breadcrumb_part">
         <div class="container">
             <div class="row">

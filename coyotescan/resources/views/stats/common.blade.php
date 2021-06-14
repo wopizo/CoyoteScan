@@ -71,7 +71,7 @@
                                                 <option value="4" @if($inputs['steptype'] == 4){{ 'selected' }}@endif>Месяцев</option>
                                             </select>
                                             <div class="nice-select" tabindex="0">
-                                                <span class="current">Минут</span>
+                                                <span class="current">Дней</span>
                                                 <ul class="list">
                                                     <li data-value="1" @if($inputs['steptype'] == 1)class="option selected" @else class="option"@endif>Минут</li>
                                                     <li data-value="2" @if($inputs['steptype'] == 2)class="option selected" @else class="option"@endif>Часов</li>

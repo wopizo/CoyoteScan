@@ -4106,7 +4106,12 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
     margin-right: 1rem;
     font-size: 1.25rem;
     line-height: inherit;
-    white-space: nowrap
+    white-space: nowrap;
+    max-height: 120px;
+}
+
+.logoImage{
+    max-height: 120px;
 }
 
 .navbar-brand:focus, .navbar-brand:hover {

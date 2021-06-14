@@ -16,8 +16,8 @@ class StatisticsController extends Controller
         $timeFinish = $request->input('timeFinish');
         $marked = $request->input('marked');
 
-        $stepType = empty($request->input('steptype'))? 1 : $request->input('steptype');
-        $delta = empty($request->input('stepval'))? 5 : $request->input('stepval');
+        $stepType = empty($request->input('steptype'))? 3 : $request->input('steptype');
+        $delta = empty($request->input('stepval'))? 1 : $request->input('stepval');
 
         switch ($stepType){
             case "1": $delta*=60; break;
@@ -50,8 +50,8 @@ class StatisticsController extends Controller
         $timeFinish = $request->input('timeFinish');
         $marked = $request->input('marked');
 
-        $stepType = empty($request->input('steptype'))? 1 : $request->input('steptype');
-        $delta = empty($request->input('stepval'))? 5 : $request->input('stepval');
+        $stepType = empty($request->input('steptype'))? 3 : $request->input('steptype');
+        $delta = empty($request->input('stepval'))? 1 : $request->input('stepval');
 
         switch ($stepType){
             case "1": $delta*=60; break;

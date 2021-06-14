@@ -23,12 +23,10 @@
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/nikic/php-parser" />
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/facade/flare-client-php" />
-      <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/facade/ignition" />
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/facade/ignition-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/league/commonmark" />
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/league/flysystem" />
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/league/mime-type-detection" />
-      <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/nesbot/carbon" />
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/ramsey/collection" />
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/ramsey/uuid" />
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/vlucas/phpdotenv" />
@@ -99,7 +97,6 @@
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/sebastian/object-reflector" />
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/sebastian/recursion-context" />
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/sebastian/resource-operations" />
-      <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/sebastian/type" />
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/sebastian/version" />
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/guzzlehttp/guzzle" />
@@ -113,6 +110,16 @@
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/phpdocumentor/reflection-docblock" />
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/phpdocumentor/type-resolver" />
       <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/graham-campbell/result-type" />
+      <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/laravel/fortify" />
+      <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/bacon/bacon-qr-code" />
+      <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/pragmarx/google2fa" />
+      <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/paragonie/constant_time_encoding" />
+      <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/dasprid/enum" />
+      <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/spatie/laravel-permission" />
+      <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/sebastian/type" />
+      <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/facade/ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/coyotescan/vendor/laravel/ui" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

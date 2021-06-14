@@ -21,7 +21,7 @@
 
                             <div class="my-3 row col-md-12">
                                 <div class="col-md-6">
-                                    <h4>Флаг для пользователей</h4>
+                                    <h4>Возможность отмечать MAC-адреса</h4>
                                 </div>
                                 <div class="col-md-6 form-group p_star">
                                     <div class="confirm-switch">
@@ -33,33 +33,19 @@
 
                             <div class="my-3 row col-md-12">
                                 <div class="col-md-6">
-                                    <h4>Флаг на MAC адреса</h4>
-                                </div>
-                                <div class="col-md-6 form-group p_star">
-                                    <div class="confirm-switch">
-                                        <input type="checkbox" id="confirm-switch3" checked>
-                                        <label for="confirm-switch3"></label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="my-3 row col-md-12">
-                                <div class="col-md-6">
-                                    <h4>Флаги могут ставить</h4>
+                                    <h4>Отмечать MAC-адреса могут</h4>
                                 </div>
                                 <div class="col-md-6 single-element-widget">
                                     <div class="default-select" id="default-select_2">
                                         <select style="display: none;">
-                                            <option value="1">Пользователи</option>
-                                            <option value="2">Администраторы</option>
-                                            <option value="3">Пользователи и Администраторы</option>
+                                            <option value="1">Администраторы</option>
+                                            <option value="2">Пользователи и Администраторы</option>
                                         </select>
                                         <div class="nice-select" tabindex="0">
                                             <span class="current">Администраторы</span>
                                             <ul class="list">
-                                                <li data-value="1" class="option">Пользователи</li>
-                                                <li data-value="2" class="option selected">Администраторы</li>
-                                                <li data-value="3" class="option">Пользователи и Администраторы</li>
+                                                <li data-value="1" class="option selected">Администраторы</li>
+                                                <li data-value="2" class="option">Пользователи и Администраторы</li>
                                             </ul>
                                         </div>
                                     </div>
